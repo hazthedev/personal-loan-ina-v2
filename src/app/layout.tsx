@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import StructuredData from '@/components/StructuredData'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,14 +18,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://loanagent-islam.vercel.app'),
+  metadataBase: new URL('https://islamic-financing-affin.netlify.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'AFFIN Islamic Personal Financing-i - Pembiayaan Peribadi Islam | Kadar Kelulusan 95%',
     description: 'Pembiayaan peribadi Islam patuh Syariah dengan kadar untung kompetitif. Kelayakan pantas 24 jam, tiada penjamin, dan kadar kelulusan 95%.',
-    url: 'https://loanagent-islam.vercel.app',
+    url: 'https://islamic-financing-affin.netlify.app',
     siteName: 'LoanAgent Islam',
     locale: 'ms_MY',
     type: 'website',
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'google-site-verification-code', // Replace with actual verification code
+    google: process.env.GOOGLE_SITE_VERIFICATION || 'google-site-verification-code',
   },
   icons: {
     icon: '/images/logos/affin-bank.png',
@@ -82,6 +83,7 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={inter.className}>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
