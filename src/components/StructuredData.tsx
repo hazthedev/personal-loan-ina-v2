@@ -10,8 +10,8 @@ export default function StructuredData() {
       "@type": "Organization",
       "name": "LoanAgent Islam",
       "alternateName": "AFFIN Islamic Personal Financing-i",
-      "url": "https://loanagent-islam.vercel.app",
-      "logo": "https://loanagent-islam.vercel.app/images/logos/affin-bank.png",
+      "url": "https://islamic-financing-affin.netlify.app",
+      "logo": "https://islamic-financing-affin.netlify.app/images/logos/affin-bank.png",
       "description": "Rakan kongsi anda yang dipercayai untuk pembiayaan peribadi Islam di Malaysia. Kami menjadikan pembiayaan mudah, pantas, dan telus dengan kadar untung kompetitif dan kadar kelulusan 95%.",
       "foundingDate": "2025",
       "address": {
@@ -51,7 +51,7 @@ export default function StructuredData() {
       "@type": "FinancialService",
       "name": "LoanAgent Islam - AFFIN Islamic Personal Financing",
       "description": "Pembiayaan peribadi Islam patuh Syariah dengan kadar untung kompetitif dan kadar kelulusan 95%",
-      "url": "https://loanagent-islam.vercel.app",
+      "url": "https://islamic-financing-affin.netlify.app",
       "telephone": "+60-16-709-5179",
       "email": "nurhaslinamohd@gmail.com",
       "address": {
@@ -99,11 +99,11 @@ export default function StructuredData() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "LoanAgent Islam",
-      "url": "https://loanagent-islam.vercel.app",
+      "url": "https://islamic-financing-affin.netlify.app",
       "description": "Platform pembiayaan peribadi Islam terkemuka di Malaysia",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://loanagent-islam.vercel.app/?q={search_term_string}",
+        "target": "https://islamic-financing-affin.netlify.app/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       },
       "publisher": {
@@ -207,7 +207,7 @@ export default function StructuredData() {
         "@type": "Audience",
         "audienceType": "Warganegara Malaysia berumur 21-60 tahun"
       },
-      "termsOfService": "https://loanagent-islam.vercel.app/terma-syarat"
+      "termsOfService": "https://islamic-financing-affin.netlify.app/terma-syarat"
     }
 
     // Create script elements
