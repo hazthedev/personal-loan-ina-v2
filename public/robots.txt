@@ -1,0 +1,50 @@
+# robots.txt for LoanAgent Islam
+# Website: https://loanagent-islam.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://loanagent-islam.vercel.app/sitemap.xml
+
+# Allow search engines to crawl important content
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Disallow crawling of sensitive areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /api/private/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block unwanted bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: BacklinkCrawler
+Disallow: /
