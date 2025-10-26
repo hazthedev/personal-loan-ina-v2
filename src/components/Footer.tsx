@@ -3,15 +3,6 @@
 import { motion } from 'framer-motion'
 
 export default function Footer() {
-  const footerLinks = {
-    legal: [
-      { name: 'Dasar Privasi', href: '#' },
-      { name: 'Terma & Syarat', href: '#' },
-      { name: 'Notis PDPA', href: '#' },
-      { name: 'Penafian', href: '#' },
-      { name: 'Pematuhan', href: '#' }
-    ]
-  }
 
   const socialLinks = [
     { name: 'Tiktok', icon: 'tt', href: 'https://www.tiktok.com/@nurhaslina77?_t=ZS-90ptt7VX276&_r=1' },
@@ -22,14 +13,14 @@ export default function Footer() {
     <footer className="bg-neutral-ink text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="lg:col-span-2"
+            className="text-center lg:text-left"
           >
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-yellow-400 mb-2">
@@ -91,31 +82,8 @@ export default function Footer() {
               ))}
             </div>
           </motion.div>
-
-          {/* Legal Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="font-semibold text-yellow-400 mb-4">Legal</h4>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
         </div>
 
-        {/* Newsletter Signup */}
       </div>
 
       {/* Bottom Bar */}
