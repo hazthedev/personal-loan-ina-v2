@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://islamic-financing-affin.netlify.app'),
+  metadataBase: new URL('https://islamic-financing-loan-affin.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'AFFIN Islamic Personal Financing-i - Pembiayaan Peribadi Islam | Kadar Kelulusan 95%',
     description: 'Pembiayaan peribadi Islam patuh Syariah dengan kadar untung kompetitif. Kelayakan pantas 24 jam, tiada penjamin, dan kadar kelulusan 95%.',
-    url: 'https://islamic-financing-affin.netlify.app',
+    url: 'https://islamic-financing-loan-affin.vercel.app',
     siteName: 'LoanAgent Islam',
     locale: 'ms_MY',
     type: 'website',
