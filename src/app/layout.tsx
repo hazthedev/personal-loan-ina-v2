@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import StructuredData from '@/components/StructuredData'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -55,9 +54,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: process.env.GOOGLE_SITE_VERIFICATION || 'google-site-verification-code',
-  },
   icons: {
     icon: '/images/logos/affin-bank.png',
     shortcut: '/images/logos/affin-bank.png',
@@ -83,7 +79,6 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={inter.className}>
-        <GoogleAnalytics />
         {children}
       </body>
     </html>
